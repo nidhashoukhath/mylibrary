@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>books</title>
+    </head>
+
+    <body>
+        <h1> Books </h1>
+        <hr>
+        <a href = '/books/create/'> Create </a>
+        <ul>
+            {% for book in books %}
+            <li>
+                <a href = "/books/{{book.id}}">{{book.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

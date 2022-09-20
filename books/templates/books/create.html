@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Book</title>
+    </head>
+
+    <body>
+        <h1> Create new Book </h1>
+        <hr>
+        <form method = "post" action = "/books/create/">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type = "submit" value = "save">
+        </form>    
+    </body>
+</html>
