@@ -9,5 +9,4 @@ urlpatterns = [
     path('<int:id>/delete/', delete)
 
 
-
 ]
